@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/logi"
+                android:title="@string/menu_home" />
+        <item
+                android:id="@+id/categoriaFragment"
+                android:icon="@drawable/categ"
+                android:title="@string/menu_categoria" />
+        <item
+                android:id="@+id/productoFragment"
+                android:icon="@drawable/produc"
+                android:title="@string/menu_producto" />
+        <item
+                android:id="@+id/usuarioFragment"
+                android:icon="@drawable/logi"
+                android:title="@string/menu_usuario" />
+        <item
+                android:id="@+id/Acercade"
+                android:icon="@drawable/fondo"
+                android:title="@string/menu_acerca"/>
+    </group>
+</menu>

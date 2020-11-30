@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/fondo"
+             tools:context="login.ui.producto.ProductoFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="331dp"
+            android:layout_height="497dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="86dp"
+            android:layout_marginBottom="88dp"
+            android:background="@drawable/fondo"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="175dp"
+                app:srcCompat="@drawable/produc" />
+
+
+            <TextView
+
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Nombre Producto"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/editNombreProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+
+            <TextView
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Descripción"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editDescripcionProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Stock"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editStockProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Precio"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/editPrecioProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="0.00"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Unidad de Medida"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editTipoUnidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint=" (U, MTS, ROLL, PIE)"
+                android:inputType="textPersonName" />
+
+
+            <TextView
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Estado"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="20dp" />
+
+
+            <Spinner
+                android:id="@+id/spinnerEstadoProducto"
+                style="@style/Widget.AppCompat.Spinner.DropDown.ActionBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Categoría"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spinnerCategoriasProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_fechahora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="yyyy-MM-dd HH:mm:ss" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <Button
+                    android:id="@+id/btnGuradarProducto"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="51dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/holo_green_light"
+                    android:text="Guardar"
+                    android:textColor="@color/design_default_color_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <Button
+                    android:id="@+id/btnListarProducto"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="51dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="Listar"
+                    android:textColor="@color/design_default_color_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnGuardar" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

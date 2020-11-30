@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@+id/nav_home">
+
+    <fragment
+            android:id="@+id/nav_home"
+            android:name="com.cortezhac.login.ui.home.HomeFragment"
+            android:label="@string/menu_home"
+            tools:layout="@layout/fragment_home" />
+
+    <fragment
+            android:id="@+id/categoriaFragment"
+            android:label="   "
+            android:name="com.cortezhac.login.ui.categoria.CategoriaFragment"
+
+            tools:layout="@layout/categoria_fragment" >
+        <action
+                android:id="@+id/action_categoriaFragment_to_listarCategoriaFragment"
+                app:destination="@id/listarCategoriaFragment"
+                app:enterAnim="@anim/fragment_fade_enter"
+                app:exitAnim="@anim/fragment_fade_exit"
+                app:popEnterAnim="@anim/fragment_open_enter"
+                app:popExitAnim="@anim/fragment_open_exit" />
+    </fragment>
+    <fragment
+            android:id="@+id/productoFragment"
+            android:label="  "
+            android:name="com.cortezhac.login.ui.producto.ProductoFragment"
+
+            tools:layout="@layout/producto_fragment" >
+        <action
+                android:id="@+id/action_productoFragment_to_listarProductoFragment"
+                app:destination="@id/listarProductoFragment"
+                app:enterAnim="@anim/fragment_fade_enter"
+                app:exitAnim="@anim/fragment_fade_exit"
+                app:popEnterAnim="@anim/fragment_open_enter"
+                app:popExitAnim="@anim/fragment_open_exit" />
+    </fragment>
+    <fragment
+            android:id="@+id/listarCategoriaFragment"
+            android:name="com.cortezhac.login.ui.categoria.ListarCategoriaFragment"
+            tools:layout="@layout/listar_categoria_fragment" >
+        <action
+                android:id="@+id/action_listarCategoriaFragment_to_updateDeleteFragment"
+                app:destination="@id/updateDeleteFragment"
+                app:enterAnim="@anim/fragment_open_enter"
+                app:exitAnim="@anim/fragment_open_exit" />
+    </fragment>
+    <fragment
+            android:id="@+id/updateDeleteFragment"
+            android:name="com.cortezhac.login.ui.categoria.UpdateDeleteFragment"
+            tools:layout="@layout/update_delete_fragment" />
+    <fragment
+            android:id="@+id/usuarioFragment"
+            android:name="com.cortezhac.login.ui.usuario.UsuarioFragment"
+            tools:layout="@layout/usuario_fragment"
+            android:label=" ">
+        <action
+                android:id="@+id/action_usuarioFragment_to_listarUsuarioFragment"
+                app:destination="@id/listarUsuario"
+                app:enterAnim="@anim/fragment_fade_enter"
+                app:exitAnim="@anim/fragment_fade_exit"
+                app:popEnterAnim="@anim/fragment_open_enter"
+                app:popExitAnim="@anim/fragment_open_exit" />
+    </fragment>
+    <fragment
+            android:id="@+id/listarUsuario"
+            android:name="com.cortezhac.login.ui.usuario.ListarUsuario"
+            android:label=" " tools:layout="@layout/listar_usuario_fragment" >
+        <action
+                android:id="@+id/action_listarUsuarioFragment_to_updateDeleteFragment"
+                app:destination="@id/updateDeleteUsuarioFragment"
+                app:enterAnim="@anim/fragment_open_enter"
+                app:exitAnim="@anim/fragment_open_exit" />
+    </fragment>
+    <fragment
+            android:id="@+id/updateDeleteUsuarioFragment"
+            android:name="com.cortezhac.login.ui.usuario.UpdateDeleteUsuarioFragment"
+            android:label=" "
+            tools:layout="@layout/update_delete__usuariofragment" />
+    <fragment
+            android:id="@+id/listarProductoFragment"
+            android:name="com.cortezhac.login.ui.producto.ListarProductoFragment"
+            android:label=" "
+            tools:layout="@layout/fragment_listar_producto">
+        <action
+                android:id="@+id/action_listarProductoFragment_to_updateDeleteFragment2"
+                app:destination="@id/updateDeleteFragment2" />
+    </fragment>
+    <fragment
+            android:id="@+id/updateDeleteFragment2"
+            android:name="com.cortezhac.login.ui.producto.UpdateDeleteFragment"
+            android:label=" "
+            tools:layout="@layout/update_delete_fragment2" />
+    <fragment
+            android:id="@+id/Acercade"
+            android:name="com.cortezhac.login.ui.login.Acerca"
+            android:label=" "
+            tools:layout="@layout/activity_acercade" />
+</navigation>

@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/fondo"
+             tools:context="login.ui.usuario.UsuarioFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="331dp"
+            android:layout_height="497dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="86dp"
+            android:layout_marginBottom="88dp"
+            android:background="@drawable/fondo"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2" />
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="325dp"
+                app:srcCompat="@drawable/logi" />
+
+            <TextView
+
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Nombres"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/editNombreUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+
+            <TextView
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Apellidos"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editApellidoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Correo"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editCorreoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Usuario"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/editUserUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nickname del usuario"
+                android:inputType="text" />
+
+
+            <TextView
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Clave"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editContrasenaUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="********"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Tipo"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="20dp" />
+
+
+            <Spinner
+                android:id="@+id/spinnerTipoUsuario"
+                style="@style/Widget.AppCompat.Spinner.DropDown.ActionBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Estado"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spinnerEstadoProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Pregunta"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spinnerPreguntaUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Respuesta"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editRespuestaUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Respuesta"
+                android:inputType="text" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <Button
+                        android:id="@+id/btnGuradarProducto"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="51dp"
+                        android:layout_gravity="center"
+                        android:background="@color/light_blue_900"
+                        android:text="Guardar"
+                        android:textColor="@color/design_default_color_background"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+
+                <Button
+                        android:id="@+id/btnListarUsuario"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="51dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:background="@color/light_blue_900"
+                        android:text="Listar"
+                        android:textColor="@color/design_default_color_background"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnGuardar"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!--
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="Usuarios"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Nombre"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/editNombreUsuario"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Nombre del usuario"
+                                android:inputType="textPersonName" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Apellido"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/editApellidoUsuario"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Apellido del usuario"
+                                android:inputType="textPersonName" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Correo"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/editCorreoUsuario"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Correo del usuario"
+                                android:inputType="textEmailAddress" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Usuario"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/editUserUsuario"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Nickname del usuario"
+                                android:inputType="text" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Contraseña"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/editContrasenaUsuario"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Contraseña"
+                                android:inputType="textPassword" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardview3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tipo de usuario"
+                                android:textColor="#000000" />
+
+                            <Spinner
+                                android:id="@+id/spinnerTipoUsuario"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Estado"
+                                android:textColor="#000000" />
+
+                            <Spinner
+                                android:id="@+id/spinnerEstadoProducto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pregunta"
+                                android:textColor="#000000" />
+
+                            <Spinner
+                                android:id="@+id/spinnerPreguntaUsuario"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Respuesta"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/editRespuestaUsuario"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Respuesta"
+                                android:inputType="text" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardview4"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardview3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnGuradarProducto"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:layout_width="wrap_content" android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorBotones"
+                                android:text="Guardar" />
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <Button
+                                android:id="@+id/btnListarUsuario"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:layout_width="wrap_content" android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorBotones"
+                                android:text="Listar" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>-->
+</FrameLayout>

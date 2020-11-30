@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ProyectFinal2020</string>
+    <!-- Strings related to login -->
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings related navigation drawer-->
+    <string name="menu_home">Home</string>
+    <string name="menu_producto">Producto</string>
+    <string name="menu_usuario">Usuario</string>
+    <string name="menu_acerca">Acerca de</string>
+    <string name="menu_categoria">Categoria</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
